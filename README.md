@@ -1,5 +1,7 @@
 # TV shows frontend 🎬
 
+Backend Repo: [Link text](https://github.com/guillegarciac/rest-api-exercise)
+
 Well well well if it isn't your first full-stack MERN application little ironhacker... 😏 Couldn't be more proud of you! 
 
 ![](homer.gif)
