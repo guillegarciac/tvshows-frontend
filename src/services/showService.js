@@ -9,10 +9,19 @@ class ShowService {
 
   // Iteration 2: use this method
   getShows() {
-    return this.api.get('/').then(({ data }) => data).catch(err => console.error(err));
+    return this.api
+      .get('/')
+      .then(({ data }) => data)
+      .catch(err => console.error(err));
   }
 
   // Iteration 3: create method
+  getShow(id) {
+    return this.api
+      .get(`/${id}`)
+      .then(({ data }) => data)
+      .catch((err) => console.error(err));
+  }
 
   // Iteration 4: create method
 
