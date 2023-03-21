@@ -5,10 +5,10 @@ import { useNavigate } from "react-router-dom";
 export default function Navbar() {
   const navigate = useNavigate();
   return (
-    <div>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/new">New show</NavLink>
-      <NavLink onClick={() => navigate(-1)}>Back</NavLink>
+    <div className="navbar-container">
+      <NavLink className="back-link" to="/">Home</NavLink>
+      <NavLink className="back-link" to="/new">New show</NavLink>
+      <NavLink onClick={() => navigate(-1)} className="back-link">Back</NavLink>
     </div>
   )
 }

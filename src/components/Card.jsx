@@ -1,15 +1,15 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export default function Card({ show }) {
-  console.log(show.title)
   return (
-    // Use to display each one of the movies
-    <div>
-      <img style={{width: '200px'}} src={show.image} alt={show.title} />
-      <h2>
-        <Link to={`/shows/${show._id}`}>{show.title}</Link>
-      </h2>
+    <div className="card-container">
+        <div className="card">
+          <img className="card-img" src={show.image} alt={show.title} />
+          <div className="card-body">
+            <h1 className="card-title"><Link to={`/shows/${show._id}`} className="details-link">{show.title}</Link></h1>
+          </div> 
+        </div>
     </div>
   )
 }
