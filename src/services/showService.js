@@ -32,6 +32,13 @@ class ShowService {
 
   // Iteration 4: create method
 
+  createShow(body) {
+    return this.api
+    .post('/', body)
+    .then(({ data }) => data)
+    .catch(err => console.error(err));
+  }
+
   // Iteration 5: create method
 }
 
